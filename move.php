@@ -1,9 +1,14 @@
 <?php
-
+# esatblish connection to database
 $conn = mysqli_connect('localhost', 'root', '', 'robot_base');
-if(mysqli_connect_errno()){
+# check if there is any error while connecting, if so a message with errno will appear to the user
+if(mysqli_connect_errno()){ 
     die('Connection Failed : '.mysqli_connect_errno());
 }else {
+    # check if user pressed button with name 'forward'
+    # if so assign the qurey needed to $Query variable with 
+    # update on table 'base' and change entity 'Direction' value to 'F' 
+    # and so on for other buttons
     if(isset($_POST['forward'])){
         $Query = "UPDATE base SET Direction = 'F' ";
         $direction = "FORWARD";
@@ -24,7 +29,9 @@ if(mysqli_connect_errno()){
         $Query = "UPDATE base SET Direction = 'R' ";
         $direction = "RIGHT";
     }
+    # apply the qurey saved in variable $Query
     $result = mysqli_query($conn, $Query);
+    # print appropriate message to user depend on which button user pressed 
         echo "Robot base is ";
         if($direction != "Stop"){
             echo " moving to $direction";
