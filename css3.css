@@ -1,0 +1,35 @@
+html {
+    background: #1d1c25;
+}
+
+div.a{
+    margin-top: 20%;
+    margin-left: 45%;
+    
+}
+button{
+    display: block;
+    width: 350px;
+    height: 90px;
+    margin-top: 40px;
+    padding: 25px;
+    border-radius: 23%;
+    cursor: pointer;
+    font-size: 7.5mm;
+    background-color: #F64C72;
+    border: black;
+    
+    
+}
+button:hover{
+    background-color: #553D67;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.8), 0 8.5px 20px 0 rgba(0, 0, 0, 0.8);
+}
+button:active{
+    transition-duration: 0.1s;
+    background-color: #553D67;
+    cursor: pointer;
+    color:wheat;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.8), 0 8.5px 20px 0 rgba(0, 0, 0, 0.8);
+    border-radius: 25%;
+}

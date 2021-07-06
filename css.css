@@ -1,0 +1,103 @@
+html {
+    background: #1d1c25;
+}
+
+a {
+    background-color: #F64C72;
+    color: black;
+    border-radius: 50%;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+
+a:hover {
+    background-color: #553D67;
+    color: wheat;
+}
+
+button {
+    color: #F64C72;
+    border: 2px #F64C72;
+    background-color: #1d1c25;
+    border-style: groove;
+    padding: 20px;
+    margin-left: 75px;
+    font-size: 110%;
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+}
+
+button:hover {
+    transition-duration: 0.1s;
+    box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.5), 0 8.5px 20px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 25%;
+}
+
+button:active {
+    transition-duration: 0.2s;
+    color: #1d1c25;
+    background-color: #F64C72;
+    border: #1d1c25;
+}
+
+div.a {
+    position: static;
+    width: 30%;
+    margin-left: 6%;
+    margin-top: 4px;
+}
+
+div.b {
+    position: static;
+    padding-left: 35%;
+    margin-top: 10%;
+}
+
+.slider1 {
+    float: left;
+    margin-top: 0.6%;
+    width: 30%;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 4px;
+    background-color: #553D67;
+}
+
+.slider1::-webkit-slider-thumb {
+    background: #F64C72;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 20px;
+    cursor: pointer;
+}
+
+span.engins {
+    color: #99738E;
+    font-size: 30;
+    display: block;
+    height: 100px;
+    margin-left: 35%;
+}
+
+.values {
+    float: left;
+    margin-right: 20px;
+    margin-top: 2px;
+    width: 38px;
+    background: #F64C72;
+    color: #553D67;
+    font-size: 18px;
+}
+
+.angel {
+    color: #99738E;
+    display: block;
+    height: 100px;
+    margin-left: -100px;
+    margin-top: -5px;
+    font-size: 30px;
+    position: absolute;
+}

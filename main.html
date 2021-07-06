@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel='stylesheet' href='css3.css'>
+    <title>Main menu</title>
+</head>
+
+<body>
+    <div class="a">
+        <button id="index">Robot arm control</button>
+        <button id="movement">Robot base control</button>
+    </div>
+
+</body>
+<script>
+    var first = document.getElementById("index");
+    first.onclick = function () {
+        location = "index.html";
+    }
+    var second = document.getElementById("movement");
+    second.onclick = function () {
+        location = "control.html"
+    }
+</script>
+
+</html>

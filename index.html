@@ -1,0 +1,127 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css.css">
+  <!-- <script src="script.js"></script> -->
+  <title>Robot Control Panel</title>
+</head>
+
+<body>
+  <a href="main.html" >&#8249;</a>
+  <div class="b">
+    <form action="adjust.php" method="POST">
+      <p><span class="angel">Angel </span></p>
+      <input type="text" class="values" id="output1" value=90 name="base">
+      <input type="range" min="0" max="180" class="slider1" id="range1">
+      <span class="engins"> Base </span>
+      <p><span class="angel">Angel </span></p>
+      <input type="text" class="values" id="output2" value=90 name="shoulder">
+      <input type="range" min="0" max="180" class="slider1" id="range2">
+      <span class="engins"> Shoulder </span>
+      <p><span class="angel">Angel </span></p>
+      <input type="text" class="values" id="output3" value=90 name="elbow">
+      <input type="range" min="0" max="180" class="slider1" id="range3">
+      <span class="engins"> Elbow </span>
+      <p><span class="angel">Angel </span></p>
+      <input type="text" class="values" id="output4" value=90 name="wrist">
+      <input type="range" min="0" max="180" class="slider1" id="range4">
+      <span class="engins"> Wrist </span>
+      <p><span class="angel">Angel </span></p>
+      <input type="text" class="values" id="output5" value=90 name="gripper">
+      <input type="range" min="0" max="180" class="slider1" id="range5">
+      <span class="engins"> Gripper </span>
+      <p><span class="angel">Angel </span></p>
+      <input type="text" class="values" id="output6" value=90 name="engin">
+      <input type="range" min="0" max="180" class="slider1" id="range6">
+      <span class="engins"> Engin</span>
+      <div class="a">
+        <button type="submit" name = "run" >Run</button>
+        <button type="submit" name = "save"  >Save </button>
+      </div>
+    </form>
+  </div>
+  <script>
+    var slider = document.getElementById("range1");
+    var slider2 = document.getElementById("range2");
+    var slider3 = document.getElementById("range3");
+    var slider4 = document.getElementById("range4");
+    var slider5 = document.getElementById("range5");
+    var slider6 = document.getElementById("range6");
+    var output = document.getElementById("output1");
+    var output2 = document.getElementById("output2");
+    var output3 = document.getElementById("output3");
+    var output4 = document.getElementById("output4");
+    var output5 = document.getElementById("output5");
+    var output6 = document.getElementById("output6");
+    
+    slider.oninput = function () {
+      output.value = this.value;
+    }
+    slider2.oninput = function () {
+      output2.value = this.value;
+    }
+    slider3.oninput = function () {
+      output3.value = this.value;
+    }
+    slider4.oninput = function () {
+      output4.value = this.value;
+    }
+    slider5.oninput = function () {
+      output5.value = this.value;
+    }
+    slider6.oninput = function () {
+      output6.value = this.value;
+    }
+
+    output.onchange = function () {
+      if (output.value <= 0) {
+        output.value = 0;
+      } else if (output.value > 180) {
+        output.value = 180;
+      }
+      slider.value = output.value;
+    }
+    output2.onchange = function () {
+      if (output2.value <= 0) {
+        output2.value = 0;
+      } else if (output2.value > 180) {
+        output2.value = 180;
+      }
+      slider2.value = output2.value;
+    }
+    output3.onchange = function () {
+      if (output3.value <= 0) {
+        output3.value = 0;
+      } else if (output3.value > 180) {
+        output3.value = 180;
+      }
+      slider3.value = output3.value;
+    }
+    output4.onchange = function () {
+      if (output4.value <= 0) {
+        output4.value = 0;
+      } else if (output4.value > 180) {
+        output4.value = 180;
+      }
+      slider4.value = output4.value;
+    }
+    output5.onchange = function () {
+      if (output5.value <= 0) {
+        output5.value = 0;
+      } else if (output5.value > 180) {
+        output5.value = 180;
+      }
+      slider5.value = output5.value;
+    }
+    output6.onchange = function () {
+      if (output6.value <= 0) {
+        output6.value = 0;
+      } else if (output6.value > 180) {
+        output6.value = 180;
+      }
+      slider6.value = output6.value;
+    }
+  </script>
+</body>
+
+</html>
