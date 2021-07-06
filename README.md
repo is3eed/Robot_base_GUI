@@ -7,4 +7,4 @@ a web-base GUI to control robot base movement, changing direction is based on wh
 * css file
 * php file
 * .sql file contains the database
-* a folder contains the merged of this task and previous task (robot arm control panel)
+* a branch contains the merged version of this task and previous task (robot arm control panel)
